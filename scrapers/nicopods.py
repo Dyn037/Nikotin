@@ -71,7 +71,7 @@ def run(date: str, max_pages: int = 5) -> List[Dict]:
                 "nicotine": nicotine,
                 "pack_size": None,
                 "price": price,
-                "e-shop": "nicopods",
+                "e-shop": "nicopods.cz",
                 "stock": stock,
                 "url": product_url,
                 "date": date,

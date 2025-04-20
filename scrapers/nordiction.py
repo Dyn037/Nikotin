@@ -51,7 +51,7 @@ def parse_product(url: str, date: str) -> Dict:
         "nicotine": nicotine,
         "pack_size": None,
         "price": price,
-        "e-shop": "nordiction",
+        "e-shop": "nordiction.cz",
         "stock": extract_stock(soup),
         "url": url,
         "date": date
