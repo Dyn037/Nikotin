@@ -1,4 +1,4 @@
-from scrapers import nicopods, nordiction, nikotinsacky, vapoo
+from scrapers import nicopods, nordiction, nikotinsacky, vapoo, royalvape, fajncigarety, ecigareta, ecigaretamarion
 from datetime import date as dt
 import to_csv
 
@@ -8,13 +8,22 @@ nicopods = nicopods.run(dt.today(), 4)
 nordiction = nordiction.run(dt.today(), 8)
 nikotinsacky = nikotinsacky.run(dt.today(), 22)
 vapoo = vapoo.run(dt.today(), 6)
+royalvape = royalvape.run(dt.today())
+fajncigarety = fajncigarety.run(dt.today())
+ecigareta = ecigareta.run(dt.today())
+ecigaretamarion = ecigaretamarion.run(dt.today())
+
 
 # Test výstupu dat
 # for product in nordiction:
 #     print(product)
 
 # Ukládání do CSV
-to_csv.save_products_to_csv(nicopods, filename='nicopods.csv')
-to_csv.save_products_to_csv(nordiction, filename="nordiction.csv")
-to_csv.save_products_to_csv(nikotinsacky, filename="nikotinsacky.csv")
-to_csv.save_products_to_csv(vapoo, filename="vapoo.csv")
+to_csv.save_products_to_csv(nicopods, filename='data/nicopods.csv')
+to_csv.save_products_to_csv(nordiction, filename="data/nordiction.csv")
+to_csv.save_products_to_csv(nikotinsacky, filename="data/nikotinsacky.csv")
+to_csv.save_products_to_csv(vapoo, filename="data/vapoo.csv")
+to_csv.save_products_to_csv(royalvape, filename="data/royalvape.csv")
+to_csv.save_products_to_csv(fajncigarety,filename="data/fajncigarety.csv")
+to_csv.save_products_to_csv(ecigareta, filename="data/ecigareta.csv")
+to_csv.save_products_to_csv(ecigaretamarion, filename="data/ecigareta_marion.csv")
