@@ -1,4 +1,15 @@
-from scrapers import nicopods, nordiction, nikotinsacky, vapoo, royalvape, fajncigarety, ecigareta, ecigaretamarion, etabak, nicomania
+from scrapers import (nicopods,
+                      nordiction,
+                      nikotinsacky,
+                      vapoo,
+                      royalvape,
+                      fajncigarety,
+                      ecigareta,
+                      ecigaretamarion,
+                      etabak,
+                      nicomania,
+                      czechpods,
+                      vaprio)
 from datetime import date as dt
 import to_csv
 
@@ -14,7 +25,8 @@ import to_csv
 # ecigaretamarion = ecigaretamarion.run(dt.today())
 # etabak = etabak.run(dt.today())
 # nicomania = nicomania.run(dt.today())
-
+# czechpods = czechpods.run(dt.today())
+vaprio = vaprio.run(dt.today())
 
 # Test výstupu dat
 # for product in nordiction:
@@ -31,3 +43,5 @@ import to_csv
 # to_csv.save_products_to_csv(ecigaretamarion, filename="data/ecigareta_marion.csv")
 # to_csv.save_products_to_csv(etabak, filename="data/etabak.csv")
 # to_csv.save_products_to_csv(nicomania, filename="data/nicomania.csv")
+# to_csv.save_products_to_csv(czechpods, filename="data/czechpods.csv")
+to_csv.save_products_to_csv(vaprio, filename="data/vaprio.csv")

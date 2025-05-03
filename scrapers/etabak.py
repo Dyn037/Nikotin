@@ -114,6 +114,7 @@ def run(date: str) -> List[Dict]:
             "nicotine": nicotine,
             "pack_size": pack_size,
             "price": price,
+            "e-shop": "etabak.cz",
             "stock": stock,
             "url": product_url,
             "date": date,
