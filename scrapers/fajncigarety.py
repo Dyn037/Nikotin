@@ -34,7 +34,7 @@ def run(date: str) -> List[Dict]:
         name_tag = product_soup.find("div", class_="p-detail-inner-header")
         name = name_tag.h1.text.strip() if name_tag and name_tag.h1 else ""
 
-        brand_tag = product_soup.find("a", {"data-testid": "productCardBrandName"})
+        brand_tag = product_soup.find("a", {"data_JSON-testid": "productCardBrandName"})
         brand = brand_tag.text.strip() if brand_tag else ""
 
         flavor = ""

@@ -56,7 +56,7 @@ def run(date: str) -> List[Dict]:
         price_tag = product_soup.find("span", class_="price-final-holder")
         price = float(price_tag.text.strip().replace('Kč', '').replace(',', '.')) if price_tag else 0
 
-        stock = bool(product_soup.select_one("span.show-tooltip.acronym[data-original-title]"))
+        stock = bool(product_soup.select_one("span.show-tooltip.acronym[data_JSON-original-title]"))
 
         pack_text = product_soup.get_text()
         pack_size = extract_pack_size(pack_text)

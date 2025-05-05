@@ -24,7 +24,7 @@ def parse_product(url: str, date: str) -> Dict:
     res.encoding = encoding
     soup = BeautifulSoup(res.text, 'html.parser')
 
-    name_tag = soup.select_one('div.p-data-wrapper div.p-detail-inner-header h1')
+    name_tag = soup.select_one('div.p-data_JSON-wrapper div.p-detail-inner-header h1')
     name = name_tag.text.strip() if name_tag else None
 
     brand = None

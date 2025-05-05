@@ -161,4 +161,4 @@ if __name__ == "__main__":
         save_to_sqlite(products)
         save_to_xlsx(products)
     else:
-        logging.info("Nebyla nalezena žádná data.")
+        logging.info("Nebyla nalezena žádná data_JSON.")
