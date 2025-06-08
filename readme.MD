@@ -50,21 +50,7 @@ sqlite3
 logging
 
 ▶️ Spuštění
-Hlavní scrapování a export:
-bash
-Zkopírovat
-Upravit
-python main.py
-Převod všech JSON do XLSX:
-bash
-Zkopírovat
-Upravit
-python from_JSON_to_XLSX.py
-Individuální test pro nicopods.cz:
-bash
-Zkopírovat
-Upravit
-python test.py
+main.py
 📊 Výstupy
 JSON soubory: data_JSON/YYYY-MM-DD.json
 
