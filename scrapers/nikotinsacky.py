@@ -20,7 +20,7 @@ def get_product_data(product_url: str, date: str) -> Dict:
     res = requests.get(product_url)
     soup = BeautifulSoup(res.text, 'html.parser')
 
-    name_tag = soup.select_one(".p-data_JSON-wrapper .p-detail-inner-header h1")
+    name_tag = soup.select_one(".p-detail-inner-header h1")
     name = name_tag.text.strip() if name_tag else ""
 
     brand = ""

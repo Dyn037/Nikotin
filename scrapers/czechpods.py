@@ -16,7 +16,7 @@ def extract_pack_size(description: str) -> int:
     return int(match.group(1)) if match else 0
 
 
-def run(date: str, max_pages: int = 3) -> List[Dict]:
+def run(date: str, max_pages) -> List[Dict]:
     base_url = "https://www.czechpods.cz"
     products = []
 

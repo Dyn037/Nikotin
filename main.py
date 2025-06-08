@@ -13,21 +13,19 @@ from scrapers import (nicopods,
 from datetime import date as dt
 import to_csv
 import to_one_JSON
-import from_JSON_to_XLSX
-
 
 # Spuštění jednotlivých scrapperů
-# nicopods = nicopods.run(dt.today(), 4)
-# nordiction = nordiction.run(dt.today(), 8)
+nicopods = nicopods.run(dt.today(), 4)
+nordiction = nordiction.run(dt.today(), 8)
 nikotinsacky = nikotinsacky.run(dt.today(), 22)
-# vapoo = vapoo.run(dt.today(), 6)
-# royalvape = royalvape.run(dt.today())
-# fajncigarety = fajncigarety.run(dt.today())
-# ecigareta = ecigareta.run(dt.today())
-# ecigaretamarion = ecigaretamarion.run(dt.today())
-# etabak = etabak.run(dt.today())
-# nicomania = nicomania.run(dt.today())
-# czechpods = czechpods.run(dt.today())
+vapoo = vapoo.run(dt.today(), 6)
+royalvape = royalvape.run(dt.today())
+fajncigarety = fajncigarety.run(dt.today())
+ecigareta = ecigareta.run(dt.today())
+ecigaretamarion = ecigaretamarion.run(dt.today())
+etabak = etabak.run(dt.today())
+nicomania = nicomania.run(dt.today())
+czechpods = czechpods.run(dt.today(), 3)
 
 # Ukládání do CSV
 # to_csv.save_products_to_csv(nicopods, filename='data_JSON/nicopods.csv')
@@ -43,18 +41,15 @@ nikotinsacky = nikotinsacky.run(dt.today(), 22)
 # to_csv.save_products_to_csv(czechpods, filename="data_JSON/czechpods.csv")
 
 # Ukládání do JSON formátu
-# to_one_JSON.save_scraped_data_to_json(nicopods,
-#                                       nordiction,
-#                                       nikotinsacky,
-#                                       vapoo,
-#                                       royalvape,
-#                                       fajncigarety,
-#                                       ecigareta,
-#                                       ecigaretamarion,
-#                                       etabak,
-#                                       nicomania,
-#                                       czechpods,
-#                                       output_dir="data_JSON")
-
-# Převod celé složky s JSON soubory do jednotného XLSX
-from_JSON_to_XLSX.jsons_to_excel("data_JSON", "nikotin_all.xlsx")
+to_one_JSON.save_scraped_data_to_json(nicopods,
+                                      nordiction,
+                                      nikotinsacky,
+                                      vapoo,
+                                      royalvape,
+                                      fajncigarety,
+                                      ecigareta,
+                                      ecigaretamarion,
+                                      etabak,
+                                      nicomania,
+                                      czechpods,
+                                      output_dir="data_JSON")

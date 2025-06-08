@@ -27,3 +27,5 @@ def jsons_to_excel(json_folder_path, output_excel_path):
     df = pd.DataFrame(all_data)
     df.to_excel(output_excel_path, index=False)
     print(f"✅ Úspěšně uloženo do: {output_excel_path}")
+
+jsons_to_excel("data_JSON", "nikotin_all.xlsx")
