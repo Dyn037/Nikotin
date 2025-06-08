@@ -34,54 +34,54 @@ Nainstalujte potřebné knihovny:
 
 ```bash
 pip install -r requirements.txt
+```
 
-Přibližný seznam knihoven:
+**Přibližný seznam knihoven:**
+- `requests`
+- `beautifulsoup4`
+- `pandas`
+- `openpyxl`
+- `sqlite3`
+- `logging`
 
-requests
+## ▶️ Spuštění
 
-beautifulsoup4
+### Hlavní scrapování a export:
+```bash
+python main.py
+```
 
-pandas
+### Převod všech JSON do XLSX:
+```bash
+python from_JSON_to_XLSX.py
+```
 
-openpyxl
+### Individuální test pro nicopods.cz:
+```bash
+python test.py
+```
 
-sqlite3
+## 📊 Výstupy
 
-logging
+- JSON soubory: `data_JSON/YYYY-MM-DD.json`
+- Excel soubor: `nikotin_all.xlsx`
+- CSV soubory (volitelné): `data_JSON/*.csv`
+- SQLite databáze: `products.db`
 
-▶️ Spuštění
-main.py
-📊 Výstupy
-JSON soubory: data_JSON/YYYY-MM-DD.json
+## 🛒 Pokryté e-shopy
 
-Excel soubor: nikotin_all.xlsx
+- nicopods.cz
+- nordiction.cz
+- nikotinsacky.cz
+- vapoo.cz
+- royalvape.cz
+- fajncigarety.cz
+- ecigareta.cz
+- ecigaretamarion.cz
+- etabak.cz
+- nicomania.cz
+- czechpods.cz
 
-CSV soubory (volitelné): data_JSON/*.csv
+## ✍️ Autor
 
-SQLite databáze: products.db
-
-🛒 Pokryté e-shopy
-nicopods.cz
-
-nordiction.cz
-
-nikotinsacky.cz
-
-vapoo.cz
-
-royalvape.cz
-
-fajncigarety.cz
-
-ecigareta.cz
-
-ecigaretamarion.cz
-
-etabak.cz
-
-nicomania.cz
-
-czechpods.cz
-
-✍️ Autor
-Daniel Pešek
+Projekt vytvořen pro účely sledování cen a vlastností nikotinových sáčků.
