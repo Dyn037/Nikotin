@@ -84,4 +84,4 @@ python test.py
 
 ## ✍️ Autor
 
-Projekt vytvořen pro účely sledování cen a vlastností nikotinových sáčků.
+Daniel Pešek
